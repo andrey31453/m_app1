@@ -7,11 +7,18 @@ module.exports = {
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 4001,
+    port: 4002,
   },
   output: {
     publicPath: 'auto',
   },
+
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].[contenthash].js',
+    publicPath: 'http://localhost:4002/',
+  },
+
   module: {
     rules: [
       {
