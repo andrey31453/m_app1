@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default ({ children }) => {
-  console.log('dsffslfskdajhfkjdsahfkj')
   return (
     <div
       style={{
