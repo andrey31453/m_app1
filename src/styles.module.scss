@@ -1,0 +1,23 @@
+:root {
+  --primary: green;
+  --secondary: red;
+}
+
+@mixin primary {
+  border-color: var(--primary);
+}
+
+@mixin secondary {
+  border-color: var(--secondary);
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  &.primary {
+    @include primary();
+  }
+  &.secondary {
+    @include secondary();
+  }
+}

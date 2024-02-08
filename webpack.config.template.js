@@ -115,6 +115,7 @@ module.exports = ({ dev }) => ({
         './App11': src + 'App11',
         './App12': src + 'App12',
         './init': src + 'index',
+        './styles': src + 'styles',
       },
       shared: {
         'react': { singleton: true },
