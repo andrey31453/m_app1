@@ -1,15 +1,13 @@
 // не переписывать
 // данный файл сгенерирован автоматически
+
 const src = path.join(__dirname, 'src/')
 
-module.exports = {
+module.exports = ({ dev }) => ({
 	plugins: [
 		new module_federation({
       name: 'app1',
       filename: 'remote_entry.js',
-      exposes: {
-        './App11': src + 'App11',
-      },
 			exposes: {
 			},
 			remotes: {
@@ -21,4 +19,4 @@ module.exports = {
       },
     }),
 	],
-}
+})

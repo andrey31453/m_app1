@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './styles.module.scss'
-console.log('styles: ', s)
 
 export default ({ children }) => {
   const ifs = true
