@@ -9,14 +9,19 @@ module.exports = ({ dev }) => ({
       name: 'app1',
       filename: 'remote_entry.js',
 			exposes: {
-			},
+
+}, 
 			remotes: {
-			},
-      shared: {
-				'react': { singleton: true },
-        'react-dom': { singleton: true },
-				
-      },
+
+}, 
+			shared: {
+'react': { singleton: true },
+'react-dom': { singleton: true }
+}, 
     }),
 	],
+
+	resolve: {
+		
+	},
 })
