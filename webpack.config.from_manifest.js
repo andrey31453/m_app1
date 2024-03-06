@@ -17,5 +17,18 @@ module.exports = ({ dev }) => ({
 		}),
 	],
 
-	resolve: {},
+	resolve: {
+		alias: {
+			'~api': src + 'entities/api',
+			'~consts': src + 'entities/consts',
+			'~entities': src + 'entities',
+			'~features': src + 'features',
+			'~libs': src + 'shared/libs',
+			'~store': src + 'processes/store',
+			'~styles': src + 'shared/styles',
+			'~types': src + 'entities/types',
+			'~ui': src + 'shared/ui',
+			'~widgets': src + 'widgets',
+		},
+	},
 })
