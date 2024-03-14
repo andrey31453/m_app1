@@ -3,5 +3,7 @@
 
   "exposes": {
     "Header": "Header"
-  }
+  },
+
+  "dev_dependencies": ["arora-npm-ts"]
 }
